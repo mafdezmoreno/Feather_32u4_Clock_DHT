@@ -22,5 +22,7 @@ __Features__:
 - Allows to change the time by push buttons
 
 
-https://user-images.githubusercontent.com/59566401/114938149-0ccfb800-9e3f-11eb-9a70-dfa05fe0d257.mp4
+
+https://user-images.githubusercontent.com/59566401/114939320-90d66f80-9e40-11eb-9616-02955f184454.mp4
+
 
