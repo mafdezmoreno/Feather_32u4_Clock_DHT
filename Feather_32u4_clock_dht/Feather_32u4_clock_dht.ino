@@ -32,9 +32,9 @@ PCF8583 rtc(0xA0);
 //Variables globales
 unsigned int ano = 2021;
 unsigned int mes = 4;
-unsigned int dia = 15;
-unsigned int hora = 0;
-unsigned int min = 0;
+unsigned int dia = 22;
+unsigned int hora = 23;
+unsigned int min = 4;
 unsigned int seg = 0;
 unsigned int activacion_sensor = 243; //para no actualizar constantemente el sensor
                                 //Para que me muestre la temp y humedad pronto pongo un valor cerca del valor de reinicio del contador (254)
@@ -81,7 +81,7 @@ void setup() {
 
   // Configuración de RTC. Solo para comprobar correcto conexionado
   //rtc.setTime(0, 0, 0);
-  //rtc.setDateTime(seg, min, hora, dia, mes, ano);
+  //rtc.setDateTime(seg, min, hora, dia, mes, ano); //Descomentar para poner correctamente la serie
   //test_rtc("sec", 0, rtc.getSecond());
 
   //Configuración de DHT
@@ -146,7 +146,7 @@ void low_power()
   lcd.clear();
   lcd.print("Low Power ON"); 
   delay(1000);
-  blink_test();
+  //blink_test();
   lcd.clear();
 
 }
